@@ -1,0 +1,27 @@
+package com.calisma.fragment
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.navigation.Navigation
+import com.calisma.R
+import com.calisma.databinding.FragmentShopBinding
+
+
+class shopFragment : Fragment() {
+   lateinit var binding : FragmentShopBinding
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = FragmentShopBinding.inflate(layoutInflater,container,false)
+        // Inflate the layout for this fragment
+        binding.loginBackBtn7.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.homeFragment2)
+        }
+        return binding.root
+    }
+
+}

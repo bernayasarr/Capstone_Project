@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Proje</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign up</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="forgotTitle">Forgot password</string>
+    <string name="password">Password</string>
+    <string name="forgot">Forgot your password?</string>
+    <string name="loginBtn">LOGIN</string>
+    <string name="signupBtn">SIGN UP</string>
+    <string name="forgotBtn">SEND</string>
+    <string name="loginsocialtext">Or sign up with social account</string>
+    <string name="registersocialtext">Or sign up with social account</string>
+
+
+    <string name="firebaseloginmessage1">Dont none,Email or Password</string>
+    <string name="firebaseregistermessage1">Success,Register.</string>
+    <string name="firebaseregistermessage2">None Email or Pass</string>
+    <string name="firebaseforgotmessage1">Send, Email Password</string>
+    <string name="firebaseforgotmessage2">Dont none, Email</string>
+
+    <string name="homeimagetext">Fashion sale</string>
+    <string name="hometitletext">News</string>
+
+    <string name="noitemscard">There are no items in the cart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

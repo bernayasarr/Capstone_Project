@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment"
+    app:startDestination="@id/homeFragment2">
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.calisma.fragment.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_homeFragmentDetails"
+            app:destination="@id/homeFragmentDetails"
+            app:popUpTo="@id/homeFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragmentDetails"
+        android:name="com.calisma.fragment.homeFragmentDetails"
+        android:label="fragment_home_details"
+        tools:layout="@layout/fragment_home_details" >
+        <argument
+            android:name="nesne"
+            app:argType="com.calisma.utils.data" />
+        <action
+            android:id="@+id/action_homeFragmentDetails_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+        <action
+            android:id="@+id/action_homeFragmentDetails_to_bagFragment"
+            app:destination="@id/bagFragment"
+            app:popUpTo="@id/homeFragmentDetails"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/bagFragment"
+        android:name="com.calisma.fragment.bagFragment"
+        android:label="fragment_bag"
+        tools:layout="@layout/fragment_bag" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="string" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="com.calisma.fragment.successFragment"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success" />
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.calisma.fragment.shopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.calisma.fragment.favoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.calisma.fragment.profileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
